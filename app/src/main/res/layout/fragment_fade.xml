@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/ChooseChannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Choose a channel:"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:id="@+id/spinnerChannel"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/ChooseChannel"
+        android:layout_alignEnd="@+id/textViewPhaseShift" />
+
+    <ImageView
+        android:id="@+id/ImageChannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/channelred"
+        android:layout_alignTop="@+id/spinnerChannel"
+        android:layout_toEndOf="@+id/ChooseChannel"
+        android:layout_alignBottom="@+id/spinnerChannel" />
+
+    <TextView
+        android:id="@+id/textViewOffset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerChannel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="offset:" />
+
+    <SeekBar
+        android:id="@+id/seekBarOffset"
+        android:max="255"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOffset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewPeriod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarOffset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="period:" />
+
+    <SeekBar
+        android:id="@+id/seekBarPeriod"
+        android:max="255"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPeriod"
+        android:layout_marginTop="8dp"
+        android:layout_alignStart="@+id/seekBarOffset"
+        android:layout_alignEnd="@+id/seekBarOffset" />
+
+    <TextView
+        android:id="@+id/textViewAmplitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarPeriod"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="amplitude:" />
+
+    <SeekBar
+        android:id="@+id/seekBarAmplitude"
+        android:max="255"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/textViewAmplitude"
+        android:layout_alignStart="@+id/seekBarPeriod"
+        android:layout_alignEnd="@+id/seekBarPeriod" />
+
+    <TextView
+        android:id="@+id/textViewPhaseShift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarAmplitude"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="phase shift:" />
+
+    <SeekBar
+        android:id="@+id/seekBarPhaseShift"
+        android:max="255"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPhaseShift"
+        android:layout_marginTop="8dp"
+        android:layout_alignEnd="@+id/seekBarAmplitude"
+        android:layout_alignStart="@+id/seekBarAmplitude" />
+
+    <TextView
+        android:id="@+id/textViewFunctions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarPhaseShift"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Select a function:" />
+
+    <Spinner
+        android:id="@+id/spinnerFunctions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewFunctions"
+        android:layout_marginTop="8dp"
+        android:layout_alignStart="@+id/seekBarPhaseShift"
+        android:layout_alignEnd="@+id/seekBarPhaseShift" />
+
+    <ImageView
+        android:id="@+id/imageViewFunction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerFunctions"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@mipmap/sinus100"
+        android:layout_alignStart="@+id/spinnerFunctions"
+        android:layout_alignEnd="@+id/spinnerFunctions" />
+
+
+</RelativeLayout>

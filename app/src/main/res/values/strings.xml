@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MoodlightNavigation</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="fading_channel">
+        <item>CH0:</item>
+        <item>CH1:</item>
+        <item>CH2:</item>
+        <item>CH3:</item>
+
+    </string-array>
+
+
+    <string-array name="fading_functions">
+        <item>sinus</item>
+        <item>sawtooth forwards</item>
+        <item>sawtooth backwards</item>
+        <item>linear ramp</item>
+        <item>parabola</item>
+        <item>cubic pulse</item>
+        <item>cubic periode</item>
+
+    </string-array>
+
+</resources>

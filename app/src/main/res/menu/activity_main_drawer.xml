@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bluetooth"
+            android:icon="@mipmap/wlan96"
+            android:title="Bluetooth" />
+        <item
+            android:id="@+id/nav_hsv"
+            android:icon="@mipmap/rgb80x80"
+            android:title="ColorPicker" />
+        <item
+            android:id="@+id/nav_accelerometer"
+            android:icon="@mipmap/acceleration96"
+            android:title="Accelerometer" />
+        <item
+            android:id="@+id/nav_fade"
+            android:icon="@mipmap/sinus96"
+            android:title="Fade" />
+
+        <item
+            android:id="@+id/nav_clock"
+            android:icon="@mipmap/alarm96"
+            android:title="Clock" />
+
+        <item
+            android:id="@+id/nav_radio"
+            android:icon="@mipmap/radio96"
+            android:title="Radio" />
+
+    </group>
+
+</menu>
