@@ -2,6 +2,7 @@
 
 ## 1. Installing the app
 You can easily installing the app by using the QR-Code.
+
 ![alt text](QRcode.png?raw=true "QR Code")
 
 
